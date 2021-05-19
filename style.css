@@ -1,0 +1,90 @@
+*{  
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+
+body{
+    background-image: url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 80%;
+    display: flex;
+    overflow: hidden;
+}
+
+.master{
+    display: contents;
+}
+
+.menujogo{
+    background: rgb(239,239,241);
+    background: linear-gradient(90deg, rgba(239,239,241,1) 0%, rgba(29,121,9,1) 91%, rgba(0,48,7,1) 100%);
+    min-height: 650px;
+    margin-left: 0;
+    align-items: flex-start;
+    min-width: 20%;
+
+    }
+button{
+
+        background-color: #144115; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        height: 70px;
+        width: 160px;
+        border-radius: 10px;
+    
+      
+}
+
+button:hover{
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.menujogo:hover{
+    box-shadow: 5px 0px rgba(0, 0, 0, 0.418);
+    background-color: rgba(2, 8, 10, 0.849);
+}
+
+.textjogo{
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 20%;
+    text-align: center;
+    
+}
+
+canvas{
+    border-radius: 20px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.473);
+
+}
+.jogo{
+    display: flex;
+    background-color: aqua;
+
+    
+}
+
+.quadro{
+    display: flex;
+    max-width: 60%;
+    align-items: center;
+    font-size: x-large;
+    text-align: center;
+
+}
+
+.canva{
+    max-width: 160%;
+    display: inline;
+    margin-top: 4%;
+    
+}
+

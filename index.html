@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <meta name="author" content="Gui Carvalho">
+    <title>Jogo Snake</title>
+</head>
+<body>
+    <section class="master">
+       
+        <div class="menujogo">
+            <div class="textjogo">
+                <h1>Snake Clássico</h1>
+                <br><br>
+                <fieldset>
+                <h3>Pontuação</h2><br>
+                    <div id="score"></div>
+                    <br><br>
+                    <h3>Morreu</h2><br>
+                        <div id="died"></div>
+                        <br><br>
+                    <label id="d">Dificuldade:</label> <br>
+                        <br>
+                    <select id="dif">
+                    <option value="200">Noob</option>
+                    <option value="190">Normal</option>
+                    <option value="100">Hard</option>
+                    <option value="10">Anaconda</option>
+                    </select>
+                <br><br>
+                </fieldset> 
+
+                <br>
+                <button type="button" onclick="setInterval(iniciarJogo, speed = dif.value)">Começar</button>
+                <br>
+                
+                <br>
+                <button type="button" onclick="window.location.reload()">Resetar</button>
+                <br>
+    
+            </div>
+            </div>
+
+    
+            <div class="quadro">
+                Selecione a dificuldade <br>
+                Clique em Começar <br> <br>
+               Para Jogar use as <br>
+                setas do teclado  <br>
+                 ← ↑ ↓ →
+
+            </div>
+
+            <div class="canva">
+                 <canvas id="snake" width="512" height="512"></canvas>
+            </div>
+
+
+
+    </section>    
+</body>
+</html>
